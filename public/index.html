@@ -18,11 +18,11 @@
                </div>
             </div>
          </form>
-         <div  class="container" id="listOfCommands">
+         <div style="display:none;" class="container" id="listOfCommands">
             <h2 style="font-size: 16px; padding: 10px;">COMMAND LIST</h2>
             <button id="clicker" class="btn btn-primary" onclick="selectAllCommands()">Select all commands</button>
          </div>
-         <div class="container" id="listOfCommandsEvent">
+         <div style="display:none;" class="container" id="listOfCommandsEvent">
             <h2 style="font-size: 16px; padding: 10px;">EVENT LIST</h2>
             <button id="clicker2" class="btn btn-primary" onclick="selectAllEvents()">Select all events</button>
          </div>
@@ -38,8 +38,8 @@
          <input type="checkbox" id="agreeCheckbox" style="margin-right: 10px;">Agree to the Terms and Conditions. </label>
          <div class="col text-center">
             <button class="btn btn-primary" onclick="State()" disabled id="submitButton" style="width: 100%">Submit</button>
+            <button onclick="window.location.href='/online.html'" class="btn btn-primary">Active Session</button>
          </div>
-         <button onclick="window.location.href='/online.html'" class="btn btn-primary">Active Session</button>
       </div>
       <div id="result" class="container text-center" style="display: none;"></div>
       <div class="footer">
