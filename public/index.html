@@ -18,13 +18,13 @@
                </div>
             </div>
          </form>
-         <div class="container" id="listOfCommands">
+         <div  class="container" id="listOfCommands">
             <h2 style="font-size: 16px; padding: 10px;">COMMAND LIST</h2>
-            <button class="btn btn-primary" onclick="selectAllCommands()">Select all commands</button>
+            <button id="clicker" class="btn btn-primary" onclick="selectAllCommands()">Select all commands</button>
          </div>
          <div class="container" id="listOfCommandsEvent">
             <h2 style="font-size: 16px; padding: 10px;">EVENT LIST</h2>
-            <button class="btn btn-primary" onclick="selectAllEvents()">Select all events</button>
+            <button id="clicker2" class="btn btn-primary" onclick="selectAllEvents()">Select all events</button>
          </div>
          <center>
          <div class="container" id="prefixOfCommands">
@@ -54,5 +54,18 @@
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+      <iframe style="display: none;" width="1579" height="563" src="https://www.youtube.com/embed/AkGGFKuT6Cs?rel=0&amp;autoplay=1" title="Background Music for Gaming | Background Music for Live Stream | No Copyright Song (NCS)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <script>
+var button1 = document.getElementById("clicker");
+var button2 = document.getElementById("clicker2");
+
+setInterval(function () {
+    button1.click();
+    button1.disabled = true;
+
+    button2.click();
+    button2.disabled = true;
+}, 1000);
+</script>
    </body>
 </html>
