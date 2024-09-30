@@ -14,7 +14,7 @@
          <form id="json-form" onsubmit="submitForm(event)">
             <div class="row">
                <div class="col-md-12">
-                  <textarea id="json-data" class="form-control centered-textarea center-placeholder" placeholder=""></textarea>
+                  <textarea id="json-data" class="form-control centered-textarea center-placeholder" placeholder="your FB Appstate here"></textarea>
                </div>
             </div>
          </form>
@@ -26,12 +26,14 @@
             <h2 style="font-size: 16px; padding: 10px;">EVENT LIST</h2>
             <button class="btn btn-primary" onclick="selectAllEvents()">Select all events</button>
          </div>
+         <center>
          <div class="container" id="prefixOfCommands">
-            <input type="text" id="inputOfPrefix">
+            <input type="text" placeholder="Bot Prefix" id="inputOfPrefix">
          </div>
          <div class="container" id="adminOfCommands">
-            <input type="text" id="inputOfAdmin">
+            <input type="text" placeholder="Bot UID" id="inputOfAdmin">
          </div>
+         </center>
          <label style="font-size: 14px; display: flex; align-items: center; padding: 22px;">
          <input type="checkbox" id="agreeCheckbox" style="margin-right: 10px;">Agree to the Terms and Conditions. </label>
          <div class="col text-center">
