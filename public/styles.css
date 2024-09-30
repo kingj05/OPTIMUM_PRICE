@@ -103,8 +103,8 @@ body {
 }
 
 #inputOfPrefix, #inputOfAdmin {
-  padding: 13px;
-  width: 200px;
+  padding: 15px;
+  width: 255px;
   border: 1px solid #ccc;
   border-radius: 8px;
   cursor: pointer;
