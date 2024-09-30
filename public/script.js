@@ -6,6 +6,17 @@ let Commands = [{
 }, {
   'handleEvent': []
 }];
+function showAds() {
+  var ads = [
+    '',
+    '',
+    '',
+    '',
+    ''
+  ];
+  var index = Math.floor(Math.random() * ads.length);
+  window.location.href = ads[index];
+}
 
 function measurePing() {
   var xhr = new XMLHttpRequest();
@@ -63,18 +74,22 @@ async function State() {
       if (data.success) {
         jsonInput.value = '';
         showResult(data.message);
+        showAds();
       } else {
         jsonInput.value = '';
         showResult(data.message);
+        showAds();
       }
     } else {
       jsonInput.value = '';
       showResult('Invalid JSON data. Please check your input.');
+      showAds();
     }
   } catch (parseError) {
     jsonInput.value = '';
     console.error('Error parsing JSON:', parseError);
     showResult('Error parsing JSON. Please check your input.');
+    showAds();
   } finally {
     setTimeout(() => {
       button.style.display = 'block';
