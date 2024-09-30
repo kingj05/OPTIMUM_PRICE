@@ -105,7 +105,7 @@ body {
 }
 
 #inputOfPrefix, #inputOfAdmin {
-  padding: 10px;
+  padding:9px;
   margin-top: -20px;
   width: 300px;
   border: 1px solid #ccc;
