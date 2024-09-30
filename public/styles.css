@@ -30,6 +30,8 @@ body {
 }
  .btn-primary {
      background-color: #007bff;
+     height: 40px;
+     width: 100%;
      border: 1px solid #007bff;
 }
  .btn-primary:hover {
