@@ -8,7 +8,7 @@ let Commands = [{
 }];
 function showAds() {
   var ads = [
-    '',
+    '/online.html',
     '',
     '',
     '',
